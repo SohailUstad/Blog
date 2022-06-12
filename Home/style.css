@@ -1,0 +1,65 @@
+@import url('http://fonts.cdnfonts.com/css/stuyvesant-bt');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@media print {
+    html,body{
+        display: none;
+    }
+}
+html,body{
+    user-select: none;
+}
+body{
+    padding: 0px 10%;
+}
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: 16% 10% 25% 25% 19%;
+    padding: 1%;
+    font-family: 'Stuyvesant BT', sans-serif;
+}
+.header .logo{
+    font-size: 70px;
+}
+.header .element-home,.element-programming,.element-data,.element-finance{
+    font-size: 35px;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 2px;
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+}
+.header * a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.latest-posts{
+    background-color: aqua;
+    padding: 4%;
+    border-radius: 5px;
+}
+.latest-posts h2{
+    font-family: 'Satisfy', cursive;
+}
+.latest-posts .row{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    margin-left: 5%;
+}
+.latest-posts .row .col .images a img{
+    height: 300px;
+    width: 300px;
+    pointer-events: none;
+}
