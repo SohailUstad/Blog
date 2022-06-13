@@ -22,7 +22,7 @@ img{
 
 .header{
     display: grid;
-    grid-template-columns: 16% 10% 25% 25% 19%;
+    grid-template-columns: 20% 10% 25% 25% 19%;
     padding: 1%;
     font-family: 'Stuyvesant BT', sans-serif;
 }
