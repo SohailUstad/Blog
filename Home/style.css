@@ -1,16 +1,21 @@
 @import url('http://fonts.cdnfonts.com/css/stuyvesant-bt');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @media print {
     html,body{
         display: none;
     }
 }
 html,body{
-    user-select: none;
+    /* user-select: none; */
 }
 body{
     padding: 0px 10%;
+}
+
+img{
+    pointer-events: none;
 }
 
 
@@ -58,8 +63,117 @@ body{
     grid-template-columns: 32% 32% 32%;
     margin-left: 5%;
 }
-.latest-posts .row .col .images a img{
+.latest-posts .row .col .images img{
     height: 300px;
     width: 300px;
     pointer-events: none;
 }
+
+
+
+.post{
+    padding: 10px;
+}
+.post .post-image img{
+    height: 400px;
+    width: 400px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+.post .post-body {
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+.post .post-body b{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.post .post-body h1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    @media print {
+        html,body{
+            display: none;
+        }
+    }
+    html,body{
+        user-select: none;
+    }
+    body{
+        padding: 0px 0%;
+    }
+
+    
+    .header{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        padding: 1%;
+        font-family: 'Stuyvesant BT', sans-serif;
+    }
+    .header .logo{
+        font-size: 70px;
+    }
+    .header .element-home,.element-programming,.element-data,.element-finance{
+        font-size: 35px;
+        background-color: darkslategray;
+        color: white;
+        text-align: center;
+        height: 50px;
+        border-radius: 10px;
+        margin: 20px 2px;
+        /* font-family: 'Satisfy', cursive; */
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+    }
+    .header * a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    
+    
+    
+    .latest-posts{
+        background-color: aqua;
+        border-radius: 5px;
+    }
+    .latest-posts h2{
+        font-family: 'Satisfy', cursive;
+    }
+    .latest-posts .row{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .latest-posts .row .col .images img{
+        height: 300px;
+        width: 300px;
+        pointer-events: none;
+        margin-left: -10px;
+    }
+    .latest-posts .row .col .images a{
+        height: 300px;
+        width: 300px;
+        margin-left: -10px;
+    }
+
+
+    
+    .post .post-image img{
+        height: 300px;
+        width: 300px;
+        margin-left: 5px
+    }
+}
+
+
+
+
